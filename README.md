@@ -21,15 +21,12 @@ Version-controlled infrastructure & automation configs
 | CI/CD            | Jenkins                                    |
 | Orchestration    | Kubernetes (deployment.yml, service.yml)   |
 | Repo & SCM       | Git + GitHub                               |
-CI/CD Workflow
-Developer Commit →
-GitHub Webhook →
-Jenkins Pipeline →
-Build & Test App →
-Docker Build →
-Push to Registry →
-Deploy on Kubernetes →
-Service Available via NodePort/Ingress
+
+
+
+🔄 CI/CD Workflow
+Developer Commit →GitHub Webhook →Jenkins Pipeline →Build & Test App →Docker Build →Push to Registry →Deploy on Kubernetes →Service Available via NodePort/Ingress
+
 
 📂 Repository Structure
 .
