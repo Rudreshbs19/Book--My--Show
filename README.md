@@ -24,11 +24,11 @@ Version-controlled infrastructure & automation configs
 
 
 
-🔄 CI/CD Workflow
+ CI/CD Workflow
 Developer Commit →GitHub Webhook →Jenkins Pipeline →Build & Test App →Docker Build →Push to Registry →Deploy on Kubernetes →Service Available via NodePort/Ingress
 
 
-📂 Repository Structure
+Repository Structure
 .
 ├── bookmyshow-app/        # Web app source code
 ├── Jenkinsfile1           # CI/CD pipeline with basic steps
@@ -47,63 +47,39 @@ Deploy	Apply Kubernetes deployment & service
 
 The Jenkinsfile can be modified to support AWS ECR or private registries.
 
-🐳 Docker
-
+Docker
 Example usage:
 
 docker build -t bookmyshow-app .
 docker run -p 3000:3000 bookmyshow-app
 
-☸ Kubernetes Deployment
+ Kubernetes Deployment
 
 Apply Kubernetes configs:
-
 kubectl apply -f deployment.yml
 kubectl apply -f service.yml
 
-
 Check status:
-
 kubectl get pods
 kubectl get svc
 
 Access the application:
-
 http://<Node-IP>:<NodePort>
 
-📌 Improvements in Progress
-
+ Improvements in Progress
 Adding Terraform to automate cluster provisioning
-
 Implementing monitoring (Prometheus + Grafana)
-
 Adding rolling deployments & rollback strategy
-
 CI/CD GitHub Actions version
-
-📸 Screenshots (Add Later)
-
-You can upload screenshots for:
-
 Jenkins pipeline success
-
 Pods & services running on K8s
 
 App working in browser
 
- Why this project is valuable?
+ Shows practical CI/CD + Kubernetes skills
+ Demonstrates scalable deployment automation
+ Matches real industry DevOps workflows
 
-🎯 Perfect for DevOps resume & portfolio
-📈 Shows practical CI/CD + Kubernetes skills
-💼 Demonstrates scalable deployment automation
-🤝 Matches real industry DevOps workflows
-
-⭐ Support
-
-If this repository helps you, please star ⭐ it!
-Contributions are welcome 😊
-
-🙌 Author
-
+ Author
 Rudresh BS
 DevOps & Cloud Engineering Enthusiast
